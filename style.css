@@ -1,0 +1,30 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Three equal columns */
+  grid-template-rows: auto auto; /* Two rows, height adjusts to content */
+}
+
+.grid-item {
+}
+
+
+.centered {
+    text-align: center;
+}
+p {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+video {
+    padding-left: 20px;
+}

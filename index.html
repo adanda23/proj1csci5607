@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project-1 Danda026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Project 1 CSCI5607</h1>
+    <div class="grid-container centered">
+        <div class="grid-item"><img src="assets/regular.png" style="max-height: 350px; max-width: 350px;" alt="Regular Goldy Pic"></div>
+        <div class="grid-item"><img src="assets/translated.png" style="max-height: 350px; max-width: 350px;" alt="Translated Goldy Pic"></div>
+        <div class="grid-item"><img src="assets/scaled.png" style="max-height: 350px; max-width: 350px;" alt="Scaled Goldy"></div>
+        <div class="grid-item"><img src="assets/rotated.png" style="max-height: 350px; max-width: 350px;" alt="Rotated Goldy"></div>
+        <div class="grid-item">Regular Goldy</div>
+        <div class="grid-item">Translated Goldy</div>
+        <div class="grid-item">Scaled Goldy</div>
+        <div class="grid-item">Rotated Goldy</div>
+    </div>
+    <p>Download source code: 
+        <a href="sourceCode/danda026Proj1.zip" download>
+            <img src="sourceCode/danda026Proj1.zip" alt="Link">
+        </a>
+        <p>Compiled on Linux with: <code> g++ squareStarter.cpp glad/glad.c -lSDL3 -lGL -ldl -I/usr/include/SDL3/ -o square</code></p>
+    </p>
+    <p>My main difficulties with this project were applying the transformations to the pictures. Applying a transformation depending on where I clicked on the object was straightforward, but figuring out how to scale the transformations with the mouse movement had stumped me for a while. Depending on how I moved the mouse, the image would scale the wrong direction or would scale by too large of a factor. Eventually I found a solution using two vectors formed with the mouse position and the rectangles position. I also had brief issues with reading in the PPM data, as my image was vertically flipped. I fixed this by calculating a flipped index and putting that instead of the regular index. Also figuring out how much leeway to give the user when dragging on a edge or corner was an extra consideration, as clicking on the exact point was difficult.</p>
+    <p>Video Demo:</p>
+    <video src="assets/recording.webm" style="max-height: 350px; max-width: 350px;" controls>
+    <script src="script.js"></script>
+</body>
+</html>
